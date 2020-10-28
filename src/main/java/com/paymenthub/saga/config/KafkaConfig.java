@@ -39,7 +39,7 @@ public class KafkaConfig {
 	public ReceiverOptions<String, String> consumerProperties() {
 		Map<String, Object> props = new HashMap<>();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
-        props.put(ConsumerConfig.CLIENT_ID_CONFIG, "fsm-duplicate-client-id");
+        props.put(ConsumerConfig.CLIENT_ID_CONFIG, "fsm-client-id");
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "fsm-group");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
